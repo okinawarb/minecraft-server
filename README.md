@@ -45,7 +45,7 @@ __NOTE: Server logs are being broadcasted by [ScreenX TV](http://screenx.tv/mine
 	> /swap                file		10485756	 0	-2  
 
 ## b). Install MineCraft Server
->  cf. [#27](https://github.com/okinawarb/meetups/issues/27)
+>  cf. [#27: Okinawa.rb サーバに MineCraft を導入する](https://github.com/okinawarb/meetups/issues/27)
 
 1. `sudo aptitude install openjdk-6-jre`
 2. `which java; /usr/bin/java`
