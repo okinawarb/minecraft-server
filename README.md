@@ -2,13 +2,19 @@ minecraft-server
 ================
 
 ### [MineCraft Server](https://minecraft.net/download) for [Okinawa.rb](http://qwik.jp/okinawarb/).
----
-## 手順書
-A. Increase Swap Size
-B. Install MineCraft Server
-C. Play MineCraft at Okinawa.rb Server
 
-## a. Increase Swap Size (cf. [swapファイルを追加する](http://linuxsalad.blogspot.jp/2009/05/swap.html))
+![SS001](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_001.png)
+![SS002](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_002.png)
+
+NOTE: Being broadcasted by [ScreenX TV](http://screenx.tv/minecraft):
+[![SS000](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_000.png)](http://screenx.tv/minecraft)
+
+
+## 手順書
+- a). Increase Swap Size
+- b). Install MineCraft Server
+
+## a). Increase Swap Size (cf. [swapファイルを追加する](http://linuxsalad.blogspot.jp/2009/05/swap.html))
 1. `cat /proc/swaps`
 
 	> Filename		Type	Size		Used	Priority  
@@ -35,7 +41,7 @@ C. Play MineCraft at Okinawa.rb Server
 	> /dev/dm-1            partition	2093052	804008	-1  
 	> /swap                file		10485756	 0	-2  
 
-## b. Install MineCraft Server (cf. [#27](https://github.com/okinawarb/meetups/issues/27))
+## b). Install MineCraft Server (cf. [#27](https://github.com/okinawarb/meetups/issues/27))
 1. `sudo aptitude install openjdk-6-jre`
 2. `which java; /usr/bin/java`
 3. `mkdir ~/minecraft; cd minecraft`
@@ -44,12 +50,4 @@ C. Play MineCraft at Okinawa.rb Server
 
 See [UbuntuでMinecraftサーバを構築](http://blog.makkysnote.org/archives/117) for details.
    - __Note: Need to consider how to co-exist MineCraft server with [ScreenX TV](http://screenx.tv) server.__
-
-## c. Screenshots of playing MineCraft at Okinawa.rb Server
-![SS001](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_001.png)
-![SS002](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_002.png)
-
-and being broadcasted by [ScreenX TV](http://screenx.tv/minecraft):
-[![SS000](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_000.png)](http://screenx.tv/minecraft)
-
 
