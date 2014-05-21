@@ -46,6 +46,7 @@ __NOTE: Server logs are being broadcasted by [ScreenX TV](http://screenx.tv/mine
 
 ## b). Install MineCraft Server
 >  cf. [#27](https://github.com/okinawarb/meetups/issues/27)
+
 1. `sudo aptitude install openjdk-6-jre`
 2. `which java; /usr/bin/java`
 3. `mkdir ~/minecraft; cd minecraft`
