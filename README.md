@@ -3,7 +3,6 @@ minecraft-server
 
 ### [MineCraft Server](https://minecraft.net/download) for [Okinawa.rb](http://qwik.jp/okinawarb/).
 
-```
 ## 手順書
 A. Increase Swap Size
 B. Install MineCraft Server
