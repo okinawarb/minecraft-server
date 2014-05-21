@@ -14,7 +14,9 @@ NOTE: Being broadcasted by [ScreenX TV](http://screenx.tv/minecraft):
 - a). Increase Swap Size
 - b). Install MineCraft Server
 
-## a). Increase Swap Size (cf. [swapファイルを追加する](http://linuxsalad.blogspot.jp/2009/05/swap.html))
+## a). Increase Swap Size
+>  cf. [swapファイルを追加する](http://linuxsalad.blogspot.jp/2009/05/swap.html)
+
 1. `cat /proc/swaps`
 
 	> Filename		Type	Size		Used	Priority  
@@ -41,7 +43,8 @@ NOTE: Being broadcasted by [ScreenX TV](http://screenx.tv/minecraft):
 	> /dev/dm-1            partition	2093052	804008	-1  
 	> /swap                file		10485756	 0	-2  
 
-## b). Install MineCraft Server (cf. [#27](https://github.com/okinawarb/meetups/issues/27))
+## b). Install MineCraft Server
+>  cf. [#27](https://github.com/okinawarb/meetups/issues/27)
 1. `sudo aptitude install openjdk-6-jre`
 2. `which java; /usr/bin/java`
 3. `mkdir ~/minecraft; cd minecraft`
