@@ -2,40 +2,34 @@ minecraft-server
 ================
 
 ### [MineCraft Server](https://minecraft.net/download) for [Okinawa.rb](http://qwik.jp/okinawarb/).
-
+---
 ## 手順書
 A. Increase Swap Size
 B. Install MineCraft Server
 C. Play MineCraft at Okinawa.rb Server
 
-## A. Increase Swap Size (cf. [swapファイルを追加する](http://linuxsalad.blogspot.jp/2009/05/swap.html))
-### 1. `cat /proc/swaps`
-```
-  Filename		Type	Size		Used	Priority
-  /dev/dm-1              partition	2093052	814496	-1
-```
-### 2. `sudo dd if=/dev/zero of=/swap bs=2G count=5 iflag=fullblock`
-```
-   5+0 records in
-   5+0 records out
-   10737418240 bytes (11 GB) copied, 3079.19 s, 3.5 MB/s
-```
-### 3. `sudo mkswap /swap`
-```
-   OKINAWARB /home/yasulab% sudo mkswap /swap                                          
-   [sudo] password for yasulab: 
-   Setting up swapspace version 1, size = 10485756 KiB
-   no label, UUID=9ac709f4-1232-4583-967a-05e1e79d3235
-```
-### 4. `sudo swapon /swap`
-### 5. `sudo echo "/swap    swap    swap    defaults    0    0" >> /etc/sftab`
-### 6. `cat /proc/swaps`
-```
-   Filename				Type		Size	  Used	Priority
-   /dev/dm-1            partition	2093052	804008	-1
-   /swap                file		10485756	 0	-2
-```
-## B. Install MineCraft Server (cf. [#27](https://github.com/okinawarb/meetups/issues/27))
+## a. Increase Swap Size (cf. [swapファイルを追加する](http://linuxsalad.blogspot.jp/2009/05/swap.html))
+1. `cat /proc/swaps`
+
+	> Filename		Type	Size		Used	Priority  
+	> /dev/dm-1              partition	2093052	814496-1
+2. `sudo dd if=/dev/zero of=/swap bs=2G count=5 iflag=fullblock`
+   > 5+0 records in  
+   > 5+0 records out  
+   > 10737418240 bytes (11 GB) copied, 3079.19 s, 3.5 MB/s
+3. `sudo mkswap /swap`  
+   > OKINAWARB /home/yasulab% sudo mkswap /swap                                            
+   > [sudo] password for yasulab:   
+   > Setting up swapspace version 1, size = 10485756 KiB  
+   > no label, UUID=9ac709f4-1232-4583-967a-05e1e79d3235
+4. `sudo swapon /swap`
+5. `sudo echo "/swap    swap    swap    defaults    0    0" >> /etc/sftab`
+6. `cat /proc/swaps`
+   > Filename				Type		Size	  Used	Priority  
+   > /dev/dm-1            partition	2093052	804008	-1  
+   > /swap                file		10485756	 0	-2  
+
+## b. Install MineCraft Server (cf. [#27](https://github.com/okinawarb/meetups/issues/27))
 1. `sudo aptitude install openjdk-6-jre`
 2. `which java; /usr/bin/java`
 3. `mkdir ~/minecraft; cd minecraft`
@@ -45,10 +39,11 @@ C. Play MineCraft at Okinawa.rb Server
 See [UbuntuでMinecraftサーバを構築](http://blog.makkysnote.org/archives/117) for details.
    - __Note: Need to consider how to co-exist MineCraft server with [ScreenX TV](http://screenx.tv) server.__
 
-## C. Screenshots of playing MineCraft at Okinawa.rb Server
+## c. Screenshots of playing MineCraft at Okinawa.rb Server
 ![SS001](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_001.png)
 ![SS002](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_002.png)
 
 and being broadcasted by [ScreenX TV](http://screenx.tv/minecraft):
 [![SS000](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_000.png)](http://screenx.tv/minecraft)
+
 
