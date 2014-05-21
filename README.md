@@ -2,15 +2,16 @@ minecraft-server
 ================
 
 ### [MineCraft Server](https://minecraft.net/download) for [Okinawa.rb](http://qwik.jp/okinawarb/).
+### Server IP Address: `180.235.230.179`
 
 ![SS001](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_001.png)
 ![SS002](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_002.png)
 
-NOTE: Being broadcasted by [ScreenX TV](http://screenx.tv/minecraft):
+__NOTE: Server logs are being broadcasted by [ScreenX TV](http://screenx.tv/minecraft):__
 [![SS000](https://dl.dropboxusercontent.com/u/2819285/minecraft-okinawarb_000.png)](http://screenx.tv/minecraft)
 
 
-## 手順書
+## How to Setup MineCraft Server
 - a). Increase Swap Size
 - b). Install MineCraft Server
 
